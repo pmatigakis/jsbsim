@@ -1,0 +1,11 @@
+language: cpp
+compiler: gcc
+sudo: required
+os: linux
+dist: trusty
+script:
+  - mkdir build
+  - cd build
+  - cmake .. -DBUILD_SHARED_LIBS
+  - make
+  - make install
